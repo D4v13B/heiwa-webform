@@ -49,5 +49,10 @@ namespace Heiwa
             this.Hide();
             mainForm.Show();
         }
+
+        private void gBoxRegistrar_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
