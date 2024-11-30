@@ -81,10 +81,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(62, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(40, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 191);
+            this.pictureBox1.Size = new System.Drawing.Size(244, 132);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -92,12 +91,11 @@
             // dGViewTabla
             // 
             this.dGViewTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGViewTabla.Location = new System.Drawing.Point(1310, 157);
-            this.dGViewTabla.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dGViewTabla.Location = new System.Drawing.Point(842, 108);
             this.dGViewTabla.Name = "dGViewTabla";
             this.dGViewTabla.RowHeadersWidth = 62;
             this.dGViewTabla.RowTemplate.Height = 28;
-            this.dGViewTabla.Size = new System.Drawing.Size(632, 1114);
+            this.dGViewTabla.Size = new System.Drawing.Size(406, 768);
             this.dGViewTabla.TabIndex = 1;
             // 
             // label1
@@ -106,10 +104,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("AirbnbCereal_W_Blk Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
-            this.label1.Location = new System.Drawing.Point(555, 61);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(357, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(627, 78);
+            this.label1.Size = new System.Drawing.Size(414, 52);
             this.label1.TabIndex = 2;
             this.label1.Text = "Gestión de Usuarios";
             // 
@@ -133,11 +130,9 @@
             this.gBoxRegistrar.Controls.Add(this.label2);
             this.gBoxRegistrar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gBoxRegistrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.gBoxRegistrar.Location = new System.Drawing.Point(551, 157);
-            this.gBoxRegistrar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.gBoxRegistrar.Location = new System.Drawing.Point(354, 108);
             this.gBoxRegistrar.Name = "gBoxRegistrar";
-            this.gBoxRegistrar.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.gBoxRegistrar.Size = new System.Drawing.Size(725, 542);
+            this.gBoxRegistrar.Size = new System.Drawing.Size(466, 374);
             this.gBoxRegistrar.TabIndex = 3;
             this.gBoxRegistrar.TabStop = false;
             this.gBoxRegistrar.Text = "Registrar";
@@ -149,40 +144,36 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Cliente",
             "Admin"});
-            this.comboBox1.Location = new System.Drawing.Point(529, 194);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.comboBox1.Location = new System.Drawing.Point(340, 134);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 47);
+            this.comboBox1.Size = new System.Drawing.Size(104, 34);
             this.comboBox1.TabIndex = 15;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label14.Location = new System.Drawing.Point(520, 154);
-            this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label14.Location = new System.Drawing.Point(334, 106);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 39);
+            this.label14.Size = new System.Drawing.Size(60, 26);
             this.label14.TabIndex = 14;
             this.label14.Text = "Tipo:";
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(529, 94);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox5.Location = new System.Drawing.Point(340, 65);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(160, 47);
+            this.textBox5.Size = new System.Drawing.Size(104, 34);
             this.textBox5.TabIndex = 12;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(520, 51);
-            this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label12.Location = new System.Drawing.Point(334, 35);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 39);
+            this.label12.Size = new System.Drawing.Size(38, 26);
             this.label12.TabIndex = 11;
             this.label12.Text = "ID:";
             // 
@@ -191,10 +182,9 @@
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
             this.btnAceptar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnAceptar.Location = new System.Drawing.Point(50, 457);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnAceptar.Location = new System.Drawing.Point(32, 315);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(218, 70);
+            this.btnAceptar.Size = new System.Drawing.Size(140, 48);
             this.btnAceptar.TabIndex = 10;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -203,10 +193,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(411, 351);
-            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label6.Location = new System.Drawing.Point(264, 242);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 39);
+            this.label6.Size = new System.Drawing.Size(83, 26);
             this.label6.TabIndex = 9;
             this.label6.Text = "Estado:";
             // 
@@ -214,93 +203,84 @@
             // 
             this.lBoxEstado.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lBoxEstado.FormattingEnabled = true;
-            this.lBoxEstado.ItemHeight = 39;
+            this.lBoxEstado.ItemHeight = 26;
             this.lBoxEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.lBoxEstado.Location = new System.Drawing.Point(417, 394);
-            this.lBoxEstado.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lBoxEstado.Location = new System.Drawing.Point(268, 272);
             this.lBoxEstado.Name = "lBoxEstado";
-            this.lBoxEstado.Size = new System.Drawing.Size(270, 43);
+            this.lBoxEstado.Size = new System.Drawing.Size(175, 30);
             this.lBoxEstado.TabIndex = 8;
             // 
             // txtBoxTelefono
             // 
             this.txtBoxTelefono.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxTelefono.Location = new System.Drawing.Point(50, 393);
-            this.txtBoxTelefono.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtBoxTelefono.Location = new System.Drawing.Point(32, 271);
             this.txtBoxTelefono.Name = "txtBoxTelefono";
-            this.txtBoxTelefono.Size = new System.Drawing.Size(312, 47);
+            this.txtBoxTelefono.Size = new System.Drawing.Size(202, 34);
             this.txtBoxTelefono.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(42, 351);
-            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label5.Location = new System.Drawing.Point(27, 242);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 39);
+            this.label5.Size = new System.Drawing.Size(101, 26);
             this.label5.TabIndex = 6;
             this.label5.Text = "Telefono:";
             // 
             // txtBoxCorreo
             // 
             this.txtBoxCorreo.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxCorreo.Location = new System.Drawing.Point(50, 294);
-            this.txtBoxCorreo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtBoxCorreo.Location = new System.Drawing.Point(32, 203);
             this.txtBoxCorreo.Name = "txtBoxCorreo";
-            this.txtBoxCorreo.Size = new System.Drawing.Size(639, 47);
+            this.txtBoxCorreo.Size = new System.Drawing.Size(412, 34);
             this.txtBoxCorreo.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(42, 248);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Location = new System.Drawing.Point(27, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 39);
+            this.label4.Size = new System.Drawing.Size(84, 26);
             this.label4.TabIndex = 4;
             this.label4.Text = "Correo:";
             // 
             // txtBoxContraseña
             // 
             this.txtBoxContraseña.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxContraseña.Location = new System.Drawing.Point(50, 196);
-            this.txtBoxContraseña.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtBoxContraseña.Location = new System.Drawing.Point(32, 135);
             this.txtBoxContraseña.Name = "txtBoxContraseña";
-            this.txtBoxContraseña.Size = new System.Drawing.Size(438, 47);
+            this.txtBoxContraseña.Size = new System.Drawing.Size(283, 34);
             this.txtBoxContraseña.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(42, 154);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Location = new System.Drawing.Point(27, 106);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 39);
+            this.label3.Size = new System.Drawing.Size(129, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "Contraseña:";
             // 
             // txtBoxNombre
             // 
             this.txtBoxNombre.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxNombre.Location = new System.Drawing.Point(50, 99);
-            this.txtBoxNombre.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtBoxNombre.Location = new System.Drawing.Point(32, 68);
             this.txtBoxNombre.Name = "txtBoxNombre";
-            this.txtBoxNombre.Size = new System.Drawing.Size(438, 47);
+            this.txtBoxNombre.Size = new System.Drawing.Size(283, 34);
             this.txtBoxNombre.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(42, 55);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Location = new System.Drawing.Point(27, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 39);
+            this.label2.Size = new System.Drawing.Size(95, 26);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre:";
             // 
@@ -309,10 +289,9 @@
             this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnOrdenes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnOrdenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnOrdenes.Location = new System.Drawing.Point(47, 467);
-            this.btnOrdenes.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnOrdenes.Location = new System.Drawing.Point(30, 322);
             this.btnOrdenes.Name = "btnOrdenes";
-            this.btnOrdenes.Size = new System.Drawing.Size(380, 71);
+            this.btnOrdenes.Size = new System.Drawing.Size(244, 49);
             this.btnOrdenes.TabIndex = 6;
             this.btnOrdenes.Text = "Ordenes";
             this.btnOrdenes.UseVisualStyleBackColor = false;
@@ -323,10 +302,9 @@
             this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnProductos.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnProductos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnProductos.Location = new System.Drawing.Point(47, 597);
-            this.btnProductos.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnProductos.Location = new System.Drawing.Point(30, 412);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(380, 71);
+            this.btnProductos.Size = new System.Drawing.Size(244, 49);
             this.btnProductos.TabIndex = 7;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
@@ -337,10 +315,9 @@
             this.btnIngredientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnIngredientes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnIngredientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnIngredientes.Location = new System.Drawing.Point(47, 728);
-            this.btnIngredientes.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnIngredientes.Location = new System.Drawing.Point(30, 502);
             this.btnIngredientes.Name = "btnIngredientes";
-            this.btnIngredientes.Size = new System.Drawing.Size(380, 71);
+            this.btnIngredientes.Size = new System.Drawing.Size(244, 49);
             this.btnIngredientes.TabIndex = 8;
             this.btnIngredientes.Text = "Ingredientes";
             this.btnIngredientes.UseVisualStyleBackColor = false;
@@ -351,10 +328,9 @@
             this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.btnCerrarSesion.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(68, 1047);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(30, 722);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(380, 71);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(244, 49);
             this.btnCerrarSesion.TabIndex = 9;
             this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
@@ -381,11 +357,9 @@
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.groupBox1.Location = new System.Drawing.Point(551, 728);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.groupBox1.Location = new System.Drawing.Point(354, 502);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.groupBox1.Size = new System.Drawing.Size(725, 542);
+            this.groupBox1.Size = new System.Drawing.Size(466, 374);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Actualizar";
@@ -395,10 +369,9 @@
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(100)))), ((int)(((byte)(157)))));
             this.btnEliminar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
             this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnEliminar.Location = new System.Drawing.Point(303, 457);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(195, 315);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(218, 70);
+            this.btnEliminar.Size = new System.Drawing.Size(140, 48);
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -410,40 +383,36 @@
             this.comboBox2.Items.AddRange(new object[] {
             "Cliente",
             "Admin"});
-            this.comboBox2.Location = new System.Drawing.Point(527, 196);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.comboBox2.Location = new System.Drawing.Point(339, 135);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(160, 47);
+            this.comboBox2.Size = new System.Drawing.Size(104, 34);
             this.comboBox2.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(520, 154);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Location = new System.Drawing.Point(334, 106);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 39);
+            this.label7.Size = new System.Drawing.Size(60, 26);
             this.label7.TabIndex = 14;
             this.label7.Text = "Tipo:";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(529, 94);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox1.Location = new System.Drawing.Point(340, 65);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 47);
+            this.textBox1.Size = new System.Drawing.Size(104, 34);
             this.textBox1.TabIndex = 12;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(520, 51);
-            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Location = new System.Drawing.Point(334, 35);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 39);
+            this.label8.Size = new System.Drawing.Size(38, 26);
             this.label8.TabIndex = 11;
             this.label8.Text = "ID:";
             // 
@@ -452,10 +421,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
             this.button1.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.button1.Location = new System.Drawing.Point(50, 457);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button1.Location = new System.Drawing.Point(32, 315);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 70);
+            this.button1.Size = new System.Drawing.Size(140, 48);
             this.button1.TabIndex = 10;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = false;
@@ -464,10 +432,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(411, 351);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label9.Location = new System.Drawing.Point(264, 242);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 39);
+            this.label9.Size = new System.Drawing.Size(83, 26);
             this.label9.TabIndex = 9;
             this.label9.Text = "Estado:";
             // 
@@ -475,93 +442,84 @@
             // 
             this.listBox3.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 39;
+            this.listBox3.ItemHeight = 26;
             this.listBox3.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.listBox3.Location = new System.Drawing.Point(417, 394);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.listBox3.Location = new System.Drawing.Point(268, 272);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(270, 43);
+            this.listBox3.Size = new System.Drawing.Size(175, 30);
             this.listBox3.TabIndex = 8;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(50, 393);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox2.Location = new System.Drawing.Point(32, 271);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(312, 47);
+            this.textBox2.Size = new System.Drawing.Size(202, 34);
             this.textBox2.TabIndex = 7;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(42, 351);
-            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label10.Location = new System.Drawing.Point(27, 242);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(153, 39);
+            this.label10.Size = new System.Drawing.Size(101, 26);
             this.label10.TabIndex = 6;
             this.label10.Text = "Telefono:";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(50, 294);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox3.Location = new System.Drawing.Point(32, 203);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(639, 47);
+            this.textBox3.Size = new System.Drawing.Size(412, 34);
             this.textBox3.TabIndex = 5;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(42, 248);
-            this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label11.Location = new System.Drawing.Point(27, 171);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 39);
+            this.label11.Size = new System.Drawing.Size(84, 26);
             this.label11.TabIndex = 4;
             this.label11.Text = "Correo:";
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.Location = new System.Drawing.Point(50, 196);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox4.Location = new System.Drawing.Point(32, 135);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(438, 47);
+            this.textBox4.Size = new System.Drawing.Size(283, 34);
             this.textBox4.TabIndex = 3;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(42, 154);
-            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label13.Location = new System.Drawing.Point(27, 106);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(194, 39);
+            this.label13.Size = new System.Drawing.Size(129, 26);
             this.label13.TabIndex = 2;
             this.label13.Text = "Contraseña:";
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(50, 99);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox6.Location = new System.Drawing.Point(32, 68);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(438, 47);
+            this.textBox6.Size = new System.Drawing.Size(283, 34);
             this.textBox6.TabIndex = 1;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(42, 55);
-            this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label15.Location = new System.Drawing.Point(27, 38);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(143, 39);
+            this.label15.Size = new System.Drawing.Size(95, 26);
             this.label15.TabIndex = 0;
             this.label15.Text = "Nombre:";
             // 
@@ -570,10 +528,9 @@
             this.btnUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnUsuario.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnUsuario.Location = new System.Drawing.Point(47, 341);
-            this.btnUsuario.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnUsuario.Location = new System.Drawing.Point(30, 235);
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(380, 71);
+            this.btnUsuario.Size = new System.Drawing.Size(244, 49);
             this.btnUsuario.TabIndex = 5;
             this.btnUsuario.Text = "Usuario";
             this.btnUsuario.UseVisualStyleBackColor = false;
@@ -583,10 +540,9 @@
             this.btnPromociones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnPromociones.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnPromociones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnPromociones.Location = new System.Drawing.Point(47, 858);
-            this.btnPromociones.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnPromociones.Location = new System.Drawing.Point(30, 592);
             this.btnPromociones.Name = "btnPromociones";
-            this.btnPromociones.Size = new System.Drawing.Size(380, 71);
+            this.btnPromociones.Size = new System.Drawing.Size(244, 49);
             this.btnPromociones.TabIndex = 32;
             this.btnPromociones.Text = "Promociones";
             this.btnPromociones.UseVisualStyleBackColor = false;
@@ -594,10 +550,10 @@
             // 
             // Usuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Heiwa.Properties.Resources.fondo_blanco;
-            this.ClientSize = new System.Drawing.Size(1969, 1312);
+            this.ClientSize = new System.Drawing.Size(1266, 904);
             this.Controls.Add(this.btnPromociones);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrarSesion);
@@ -610,7 +566,6 @@
             this.Controls.Add(this.dGViewTabla);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Usuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Heiwa - Administrador";
