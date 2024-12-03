@@ -11,6 +11,7 @@ namespace Heiwa
         private Productos productosForm;
         private Ingredientes ingredientesForm;
         private Promociones promocionesForm;
+        private Reportes reportesForm;
 
         public Main()
         {
@@ -22,13 +23,15 @@ namespace Heiwa
             productosForm = new Productos();
             ingredientesForm = new Ingredientes();
             promocionesForm = new Promociones();
+            reportesForm = new Reportes();
 
             // Pasar referencias de los formularios entre sí
-            usuariosForm.ConfigurarFormularios(this, ordenesForm, productosForm, ingredientesForm, promocionesForm);
-            ordenesForm.ConfigurarFormularios(this, usuariosForm, productosForm, ingredientesForm, promocionesForm);
-            productosForm.ConfigurarFormularios(this, usuariosForm, ordenesForm, ingredientesForm, promocionesForm);
-            ingredientesForm.ConfigurarFormularios(this, usuariosForm, ordenesForm, productosForm, promocionesForm);
-            promocionesForm.ConfigurarFormularios(this, usuariosForm, ordenesForm, productosForm, ingredientesForm);
+            usuariosForm.ConfigurarFormularios(this, ordenesForm, productosForm, ingredientesForm, promocionesForm, reportesForm);
+            ordenesForm.ConfigurarFormularios(this, usuariosForm, productosForm, ingredientesForm, promocionesForm, reportesForm);
+            productosForm.ConfigurarFormularios(this, usuariosForm, ordenesForm, ingredientesForm, promocionesForm, reportesForm);
+            ingredientesForm.ConfigurarFormularios(this, usuariosForm, ordenesForm, productosForm, promocionesForm, reportesForm);
+            promocionesForm.ConfigurarFormularios(this, usuariosForm, ordenesForm, productosForm, ingredientesForm, reportesForm);
+            reportesForm.ConfigurarFormularios(this, usuariosForm, ordenesForm, productosForm, ingredientesForm, promocionesForm);
         }
 
         private void AbrirAdminWindow()

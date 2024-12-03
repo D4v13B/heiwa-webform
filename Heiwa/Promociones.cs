@@ -18,6 +18,7 @@ namespace Heiwa
         private Form ordenesForm;
         private Form productosForm;
         private Form ingredientesForm;
+        private Form reportesForm;
 
         public Promociones()
         {
@@ -25,13 +26,14 @@ namespace Heiwa
         }
 
         // Método para configurar las referencias de los formularios
-        public void ConfigurarFormularios(Main main, Form usuarios, Form ordenes, Form productos, Form ingredientes)
+        public void ConfigurarFormularios(Main main, Form usuarios, Form ordenes, Form productos, Form ingredientes, Form reportes)
         {
             mainForm = main;
             usuariosForm = usuarios;
             ordenesForm = ordenes;
             productosForm = productos;
             ingredientesForm = ingredientes;
+            reportesForm = reportes;
         }
 
         // Manejo de botones
@@ -53,6 +55,10 @@ namespace Heiwa
         {
             CambiarFormulario(ingredientesForm);
         }
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            CambiarFormulario(reportesForm);
+        }
 
         // Método para ocultar el actual y mostrar el siguiente formulario
         private void CambiarFormulario(Form formularioDestino)
@@ -66,6 +72,5 @@ namespace Heiwa
             this.Hide();
             mainForm.Show();
         }
-
     }
 }
