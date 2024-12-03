@@ -71,6 +71,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGViewTabla)).BeginInit();
             this.gBoxRegistrar.SuspendLayout();
@@ -328,7 +329,7 @@
             this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.btnCerrarSesion.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(54, 722);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(30, 827);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(244, 49);
             this.btnCerrarSesion.TabIndex = 9;
@@ -547,12 +548,25 @@
             this.button2.Text = "Promociones";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // btnReportes
+            // 
+            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
+            this.btnReportes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.btnReportes.Location = new System.Drawing.Point(30, 676);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(244, 49);
+            this.btnReportes.TabIndex = 43;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = false;
+            // 
             // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Heiwa.Properties.Resources.fondo_blanco;
             this.ClientSize = new System.Drawing.Size(1266, 905);
+            this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrarSesion);
@@ -622,5 +636,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReportes;
     }
 }

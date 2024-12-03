@@ -36,6 +36,14 @@
             this.btnOrdenes = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.gBoxRegistrar = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.numUDCantidad = new System.Windows.Forms.NumericUpDown();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -54,18 +62,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.numUDCantidad = new System.Windows.Forms.NumericUpDown();
+            this.btnReportes = new System.Windows.Forms.Button();
             this.gBoxRegistrar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUDCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrarSesion
@@ -73,7 +74,7 @@
             this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.btnCerrarSesion.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(44, 722);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(30, 837);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(244, 49);
             this.btnCerrarSesion.TabIndex = 20;
@@ -165,6 +166,88 @@
             this.gBoxRegistrar.TabStop = false;
             this.gBoxRegistrar.Text = "Administrar";
             this.gBoxRegistrar.Enter += new System.EventHandler(this.gBoxRegistrar_Enter);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(338, 518);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(106, 26);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Cantidad:";
+            // 
+            // numUDCantidad
+            // 
+            this.numUDCantidad.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numUDCantidad.Location = new System.Drawing.Point(343, 547);
+            this.numUDCantidad.Name = "numUDCantidad";
+            this.numUDCantidad.Size = new System.Drawing.Size(101, 34);
+            this.numUDCantidad.TabIndex = 28;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(100)))), ((int)(((byte)(157)))));
+            this.btnEliminar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
+            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.btnEliminar.Location = new System.Drawing.Point(192, 697);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(140, 48);
+            this.btnEliminar.TabIndex = 27;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Location = new System.Drawing.Point(34, 627);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(24, 26);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "$";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(64, 624);
+            this.textBox2.MaxLength = 6;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(85, 34);
+            this.textBox2.TabIndex = 25;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(34, 590);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(122, 26);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Descuento:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 10F, System.Drawing.FontStyle.Bold);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Ramen Especial",
+            "Ramen Clásico",
+            "Ramen Picante"});
+            this.comboBox3.Location = new System.Drawing.Point(32, 546);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(300, 34);
+            this.comboBox3.TabIndex = 19;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(28, 516);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(106, 26);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Producto:";
             // 
             // comboBox2
             // 
@@ -354,87 +437,17 @@
             this.button1.Text = "Promociones";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // comboBox3
+            // btnReportes
             // 
-            this.comboBox3.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 10F, System.Drawing.FontStyle.Bold);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Ramen Especial",
-            "Ramen Clásico",
-            "Ramen Picante"});
-            this.comboBox3.Location = new System.Drawing.Point(32, 546);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(300, 34);
-            this.comboBox3.TabIndex = 19;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(28, 516);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 26);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Producto:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(34, 627);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(24, 26);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "$";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(64, 624);
-            this.textBox2.MaxLength = 6;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(85, 34);
-            this.textBox2.TabIndex = 25;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(34, 590);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(122, 26);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Descuento:";
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(100)))), ((int)(((byte)(157)))));
-            this.btnEliminar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
-            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnEliminar.Location = new System.Drawing.Point(192, 697);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(140, 48);
-            this.btnEliminar.TabIndex = 27;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(338, 518);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(106, 26);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "Cantidad:";
-            // 
-            // numUDCantidad
-            // 
-            this.numUDCantidad.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numUDCantidad.Location = new System.Drawing.Point(343, 547);
-            this.numUDCantidad.Name = "numUDCantidad";
-            this.numUDCantidad.Size = new System.Drawing.Size(101, 34);
-            this.numUDCantidad.TabIndex = 28;
+            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
+            this.btnReportes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.btnReportes.Location = new System.Drawing.Point(30, 676);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(244, 49);
+            this.btnReportes.TabIndex = 43;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = false;
             // 
             // Ordenes
             // 
@@ -442,6 +455,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Heiwa.Properties.Resources.fondo_blanco;
             this.ClientSize = new System.Drawing.Size(1266, 905);
+            this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnIngredientes);
@@ -457,9 +471,9 @@
             this.Text = "Heiwa - Administrador";
             this.gBoxRegistrar.ResumeLayout(false);
             this.gBoxRegistrar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUDCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -498,5 +512,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numUDCantidad;
+        private System.Windows.Forms.Button btnReportes;
     }
 }
