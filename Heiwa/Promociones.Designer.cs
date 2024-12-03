@@ -80,6 +80,7 @@
             this.btnIngredientes.TabIndex = 28;
             this.btnIngredientes.Text = "Ingredientes";
             this.btnIngredientes.UseVisualStyleBackColor = false;
+            this.btnIngredientes.Click += new System.EventHandler(this.btnIngredientes_Click);
             // 
             // btnProductos
             // 
@@ -92,6 +93,7 @@
             this.btnProductos.TabIndex = 27;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // btnOrdenes
             // 
@@ -104,6 +106,7 @@
             this.btnOrdenes.TabIndex = 26;
             this.btnOrdenes.Text = "Ordenes";
             this.btnOrdenes.UseVisualStyleBackColor = false;
+            this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
             // 
             // btnUsuario
             // 
@@ -116,6 +119,7 @@
             this.btnUsuario.TabIndex = 25;
             this.btnUsuario.Text = "Usuario";
             this.btnUsuario.UseVisualStyleBackColor = false;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // gBoxRegistrar
             // 
@@ -332,6 +336,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Promociones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Heiwa - Administradores";
             this.gBoxRegistrar.ResumeLayout(false);
             this.gBoxRegistrar.PerformLayout();

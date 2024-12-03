@@ -72,6 +72,7 @@
             this.btnUsuario = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
+            this.btnPromociones = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGViewTabla)).BeginInit();
             this.gBoxRegistrar.SuspendLayout();
@@ -290,7 +291,7 @@
             this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnOrdenes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnOrdenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnOrdenes.Location = new System.Drawing.Point(40, 320);
+            this.btnOrdenes.Location = new System.Drawing.Point(30, 322);
             this.btnOrdenes.Name = "btnOrdenes";
             this.btnOrdenes.Size = new System.Drawing.Size(244, 49);
             this.btnOrdenes.TabIndex = 6;
@@ -303,7 +304,7 @@
             this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnProductos.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnProductos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnProductos.Location = new System.Drawing.Point(40, 411);
+            this.btnProductos.Location = new System.Drawing.Point(30, 412);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(244, 49);
             this.btnProductos.TabIndex = 7;
@@ -316,7 +317,7 @@
             this.btnIngredientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnIngredientes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnIngredientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnIngredientes.Location = new System.Drawing.Point(40, 502);
+            this.btnIngredientes.Location = new System.Drawing.Point(30, 502);
             this.btnIngredientes.Name = "btnIngredientes";
             this.btnIngredientes.Size = new System.Drawing.Size(244, 49);
             this.btnIngredientes.TabIndex = 8;
@@ -529,24 +530,25 @@
             this.btnUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.btnUsuario.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.btnUsuario.Location = new System.Drawing.Point(40, 235);
+            this.btnUsuario.Location = new System.Drawing.Point(30, 235);
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.Size = new System.Drawing.Size(244, 49);
             this.btnUsuario.TabIndex = 5;
             this.btnUsuario.Text = "Usuario";
             this.btnUsuario.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnPromociones
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.button2.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.button2.Location = new System.Drawing.Point(30, 592);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 49);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Promociones";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnPromociones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
+            this.btnPromociones.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPromociones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.btnPromociones.Location = new System.Drawing.Point(30, 592);
+            this.btnPromociones.Name = "btnPromociones";
+            this.btnPromociones.Size = new System.Drawing.Size(244, 49);
+            this.btnPromociones.TabIndex = 32;
+            this.btnPromociones.Text = "Promociones";
+            this.btnPromociones.UseVisualStyleBackColor = false;
+            this.btnPromociones.Click += new System.EventHandler(this.btnPromociones_Click);
             // 
             // btnReportes
             // 
@@ -568,6 +570,7 @@
             this.ClientSize = new System.Drawing.Size(1266, 905);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPromociones);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnIngredientes);
@@ -580,6 +583,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Usuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Heiwa - Administrador";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGViewTabla)).EndInit();
@@ -637,5 +641,6 @@
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnPromociones;
     }
 }

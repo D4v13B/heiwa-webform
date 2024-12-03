@@ -50,6 +50,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
+            this.btnPromociones = new System.Windows.Forms.Button();
+
             this.gBoxRegistrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUDCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGViewTabla)).BeginInit();
@@ -92,7 +94,7 @@
             this.btnProductos.TabIndex = 18;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
-            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click_1);
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // btnOrdenes
             // 
@@ -105,7 +107,7 @@
             this.btnOrdenes.TabIndex = 17;
             this.btnOrdenes.Text = "Ordenes";
             this.btnOrdenes.UseVisualStyleBackColor = false;
-            this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click_1);
+            this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
             // 
             // btnUsuario
             // 
@@ -276,17 +278,18 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnPromociones
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.button1.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.button1.Location = new System.Drawing.Point(30, 592);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 49);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Promociones";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPromociones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
+            this.btnPromociones.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPromociones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.btnPromociones.Location = new System.Drawing.Point(30, 592);
+            this.btnPromociones.Name = "btnPromociones";
+            this.btnPromociones.Size = new System.Drawing.Size(244, 49);
+            this.btnPromociones.TabIndex = 32;
+            this.btnPromociones.Text = "Promociones";
+            this.btnPromociones.UseVisualStyleBackColor = false;
+            this.btnPromociones.Click += new System.EventHandler(this.btnPromociones_Click);
             // 
             // btnReportes
             // 
@@ -308,6 +311,7 @@
             this.ClientSize = new System.Drawing.Size(1266, 905);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPromociones);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnIngredientes);
             this.Controls.Add(this.btnProductos);
@@ -319,6 +323,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ingredientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Heiwa - Administrador";
             this.gBoxRegistrar.ResumeLayout(false);
             this.gBoxRegistrar.PerformLayout();
@@ -352,5 +357,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnPromociones;
     }
 }

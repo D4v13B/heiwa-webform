@@ -78,6 +78,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
+            this.btnPromociones = new System.Windows.Forms.Button();
             this.gBoxRegistrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -613,17 +614,18 @@
             this.label19.TabIndex = 2;
             this.label19.Text = "Descripción:";
             // 
-            // button4
+            // btnPromociones
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.button4.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
-            this.button4.Location = new System.Drawing.Point(30, 592);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(244, 49);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "Promociones";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnPromociones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
+            this.btnPromociones.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPromociones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.btnPromociones.Location = new System.Drawing.Point(30, 592);
+            this.btnPromociones.Name = "btnPromociones";
+            this.btnPromociones.Size = new System.Drawing.Size(244, 49);
+            this.btnPromociones.TabIndex = 32;
+            this.btnPromociones.Text = "Promociones";
+            this.btnPromociones.UseVisualStyleBackColor = false;
+            this.btnPromociones.Click += new System.EventHandler(this.btnPromociones_Click);
             // 
             // btnReportes
             // 
@@ -645,6 +647,7 @@
             this.ClientSize = new System.Drawing.Size(1266, 905);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnPromociones);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnIngredientes);
@@ -657,6 +660,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Productos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Heiwa - Administrador";
             this.gBoxRegistrar.ResumeLayout(false);
             this.gBoxRegistrar.PerformLayout();
@@ -719,5 +723,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnPromociones;
     }
 }
