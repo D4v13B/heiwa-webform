@@ -76,6 +76,7 @@
     <Compile Include="Reportes.Designer.cs">
       <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\ClienteHttp.cs" />
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
