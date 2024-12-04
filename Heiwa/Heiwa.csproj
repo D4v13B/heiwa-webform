@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +55,30 @@
     <Compile Include="Ingredientes.Designer.cs">
       <DependentUpon>Ingredientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Ingrediente.cs" />
+    <Compile Include="Models\IngredienteRequest.cs" />
+    <Compile Include="Models\MetodoPago.cs" />
+    <Compile Include="Models\MetodoPagoRequest.cs" />
+    <Compile Include="Models\Orden.cs" />
+    <Compile Include="Models\OrdenDetalle.cs" />
+    <Compile Include="Models\OrdenDetalleRequest.cs" />
+    <Compile Include="Models\OrdenEstado.cs" />
+    <Compile Include="Models\OrdenEstadoRequest.cs" />
+    <Compile Include="Models\OrdenRequest.cs" />
+    <Compile Include="Models\PlatilloIngrediente.cs" />
+    <Compile Include="Models\PlatilloIngredienteRequest.cs" />
+    <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\ProductoRequest.cs" />
+    <Compile Include="Models\ProductoTipoRequest.cs" />
+    <Compile Include="Models\ProductoTipos.cs" />
+    <Compile Include="Models\Promocion.cs" />
+    <Compile Include="Models\PromocionDetalle.cs" />
+    <Compile Include="Models\PromocionDetalleRequest.cs" />
+    <Compile Include="Models\PromocionRequest.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\UsuarioRequest.cs" />
+    <Compile Include="Models\UsuarioTipo.cs" />
+    <Compile Include="Models\UsuarioTipoRequest.cs" />
     <Compile Include="Ordenes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +104,7 @@
       <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\ClienteHttp.cs" />
+    <Compile Include="Services\ServiceAPI.cs" />
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +150,7 @@
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
