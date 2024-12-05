@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Heiwa.Models;
+using Heiwa.Services;
+using System;
+using System.Net.Http;
 using System.Windows.Forms;
 
 namespace Heiwa
@@ -64,5 +67,135 @@ namespace Heiwa
             mainForm.Show();
         }
 
+        private async void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtBoxNombre.Text;
+            string medida = txtMedida.Text;
+            if (string.IsNullOrWhiteSpace(nombre) && string.IsNullOrWhiteSpace(medida))
+            {
+                MessageBox.Show("Debe llenar los campos vacíos.");
+                return;
+            }
+
+            if (!int.TryParse(txtCantidad.Text, out int cantidad))
+            {
+                MessageBox.Show("Por favor, ingrese una cantidad válida.");
+                return;
+            }
+
+            var ingredienteRequest = new IngredienteRequest
+            {
+                Nombre = nombre,
+                Stock = cantidad,
+                UnidadMedida = medida
+            };
+            try
+                {
+                    await ServiceAPI.SaveIngredienteAsync(ingredienteRequest);
+                    MessageBox.Show("Ingrediente guardado exitosamente.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al guardar el ingrediente: {ex.Message}");
+                }
+        }
+
+        private async void btnEliminar_Click(object sender, EventArgs e)
+        {
+            
+                
+                if (!int.TryParse(txtID.Text, out int id))
+                {
+                    MessageBox.Show("Por favor, ingrese un ID válido.");
+                    return;
+                }
+
+                try
+                {
+                    
+                    await ServiceAPI.DeleteIngredienteAsync(id);
+
+                    MessageBox.Show("Ingrediente eliminado correctamente.");
+
+                   
+                }
+                
+                catch (HttpRequestException ex)
+                {
+                    if (ex.Message.Contains("400"))
+                    {
+                        MessageBox.Show("Solicitud inválida. Verifique que el ID sea correcto y válido.");
+                    }
+                    else if (ex.Message.Contains("404"))
+                    {
+                        MessageBox.Show("No se encontró ningún ingrediente con el ID proporcionado.");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Error al intentar eliminar el ingrediente: {ex.Message}");
+                    }
+                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Se produjo un error inesperado: {ex.Message}");
+                }
+            
+
+        }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtID.Text, out int id))
+            {
+                MessageBox.Show("Por favor, ingrese un ID válido.");
+                return;
+            }
+            string nombre = txtBoxNombre.Text;
+            string medida = txtMedida.Text;
+            if (string.IsNullOrWhiteSpace(nombre) && string.IsNullOrWhiteSpace(medida))
+            {
+                MessageBox.Show("Debe llenar los campos vacíos.");
+                return;
+            }
+            if (!int.TryParse(txtCantidad.Text, out int cantidad))
+            {
+                MessageBox.Show("Por favor, ingrese una cantidad válida.");
+                return;
+            }
+            
+
+            var ingredienteRequest = new IngredienteRequest
+            {
+                Nombre = nombre,
+                Stock = cantidad,
+                UnidadMedida = medida
+            };
+
+            try
+            {
+                await ServiceAPI.UpdateIngredienteAsync(id, ingredienteRequest);
+                MessageBox.Show("Ingrediente guardado exitosamente.");
+
+            }
+            catch (HttpRequestException ex)
+            {
+                if (ex.Message.Contains("400"))
+                {
+                    MessageBox.Show("Solicitud inválida. Verifique que el ID sea correcto y válido.");
+                }
+                else if (ex.Message.Contains("404"))
+                {
+                    MessageBox.Show("No se encontró ningún ingrediente con el ID proporcionado.");
+                }
+                else
+                {
+                    MessageBox.Show($"Error al intentar eliminar el ingrediente: {ex.Message}");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Se produjo un error inesperado: {ex.Message}");
+            }
+        }
     }
 }
