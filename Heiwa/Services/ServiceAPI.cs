@@ -4,6 +4,7 @@
     using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
+    using System.Data;
     using System.Net.Http;
     using System.Text;
     using System.Threading.Tasks;
@@ -24,6 +25,7 @@
         //Agregar usuario
         public static async Task SaveUsuarioAsync(UsuarioRequest usuarioRequest)
         {
+            
             var url = "Usuario";
 
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(usuarioRequest);
@@ -38,6 +40,7 @@
         //Ingredientes
         public static async Task<List<Ingrediente>> GetIngredientesAsync()
         {
+            
             var url = "Ingrediente"; 
 
             HttpResponseMessage response = await httpClient.GetAsync(url);
@@ -51,6 +54,7 @@
         // Obtener un ingrediente por su ID
         public static async Task<Ingrediente> GetIngredienteByIdAsync(int id)
         {
+            
             var url = $"Ingrediente/{id}"; 
 
             HttpResponseMessage response = await httpClient.GetAsync(url);
@@ -64,6 +68,7 @@
         // Guardar un nuevo ingrediente
         public static async Task SaveIngredienteAsync(IngredienteRequest ingredienteRequest)
         {
+           
             var url = "Ingrediente"; 
 
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(ingredienteRequest);
@@ -77,6 +82,7 @@
         // Actualizar un ingrediente
         public static async Task UpdateIngredienteAsync(int id, IngredienteRequest ingredienteRequest)
         {
+            
             var url = $"Ingrediente/{id}"; 
 
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(ingredienteRequest);
@@ -90,6 +96,7 @@
         // Eliminar un ingrediente
         public static async Task DeleteIngredienteAsync(int id)
         {
+            
             var url = $"Ingrediente/{id}"; 
 
             HttpResponseMessage response = await httpClient.DeleteAsync(url);
@@ -127,7 +134,7 @@
         }
 
         // Guardar un nuevo producto
-        public async Task SaveProductAsync(ProductoRequest productoRequest)
+        public static async Task SaveProductAsync(ProductoRequest productoRequest)
         {
 
             var url = "Producto"; 
@@ -169,7 +176,7 @@
 
         //Metodo de pago
         // Obtener todos los métodos de pago
-        public async Task<List<MetodoPago>> GetMetodosPagoAsync()
+        public static async Task<List<MetodoPago>> GetMetodosPagoAsync()
         {
 
             var url = "MetodoPago"; 
@@ -198,7 +205,7 @@
         }
 
         // Guardar un nuevo método de pago
-        public async Task SaveMetodoPagoAsync(MetodoPagoRequest metodoPagoRequest)
+        public static async Task SaveMetodoPagoAsync(MetodoPagoRequest metodoPagoRequest)
         {
 
             var url = "MetodoPago"; 
@@ -468,6 +475,31 @@
             HttpResponseMessage response = await httpClient.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
+        }
+
+        public static async Task<DataTable> GetDataTableAsync()
+        {
+            var url = "Reportes/porProducto"; // Aquí colocas el endpoint adecuado
+
+            try
+            {
+                // Realizamos la solicitud HTTP de manera asíncrona
+                HttpResponseMessage response = await httpClient.GetAsync(url);
+                response.EnsureSuccessStatusCode(); // Garantiza que la respuesta sea exitosa
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                // Convertimos la respuesta a DataTable
+                var dataTable = JsonConvert.DeserializeObject<DataTable>(responseBody);
+
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                // En caso de error, se captura y se imprime
+                Console.WriteLine($"Error al obtener el DataTable: {ex.Message}");
+                return null;
+            }
         }
 
     }
