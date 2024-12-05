@@ -7,7 +7,7 @@ namespace Heiwa
     public class ClienteHttp
     {
         private static HttpClient _client;
-        private static readonly string BaseUrl = "http://localhost:5071/api/";
+        private static readonly string BaseUrl = "http://localhost:5027/api/";
 
         public static HttpClient CreateHttpClient()
         {
@@ -59,7 +59,6 @@ namespace Heiwa
         public static async Task<string> DeleteAsync(string relativeUrl)
         {
             HttpClient client = CreateHttpClient();
-            // Puedes pasar directamente la ruta relativa, no es necesario concatenar con BaseUrl
             HttpResponseMessage response = await client.DeleteAsync(relativeUrl);
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();

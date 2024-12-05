@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Heiwa.Models;
+using Heiwa.Services;
+using System;
 using System.Windows.Forms;
 
 namespace Heiwa
@@ -65,6 +67,40 @@ namespace Heiwa
         {
             this.Hide();
             mainForm.Show();
+        }
+
+        //Esto me va a guardar el usuario
+        private async void btnAceptar_Click(object sender, EventArgs e)
+        {
+            var nombre = txtNewNombre.Text;
+            var correo = txtNewCorreo.Text;
+            var password = txtNewPassword.Text;
+            var telefono = txtNewTelefono.Text;
+            var tipo = lbxNewEstado.Text;
+            int tipoId = 1;
+
+            if(tipo == "Cliente")
+            {
+                tipoId = 2;
+            }
+
+            UsuarioRequest usuarioRequest = new UsuarioRequest()
+            {
+                Nombre = nombre,
+                Password = password,
+                Email = correo,
+                Telefono = telefono,
+                UsuarioTipoId = tipoId
+            };
+
+            try
+            {
+                await ServiceAPI.SaveUsuarioAsync(usuarioRequest);
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Error al momento de guardar el usuario");
+            }
         }
     }
 }

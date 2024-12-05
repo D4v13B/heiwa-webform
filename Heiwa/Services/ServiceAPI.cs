@@ -13,6 +13,21 @@
 
         private static readonly HttpClient httpClient = new HttpClient();
 
+        //Usuarios 
+
+        //Agregar usuario
+        public static async Task SaveUsuarioAsync(UsuarioRequest usuarioRequest)
+        {
+            var url = "Usuario";
+
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(usuarioRequest);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            response.EnsureSuccessStatusCode();
+
+        }
+
 
         //Ingredientes
         public static async Task<List<Ingrediente>> GetIngredientesAsync()

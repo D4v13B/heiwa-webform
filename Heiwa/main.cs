@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http;
+using System.Text;
 using System.Windows.Forms;
 
 namespace Heiwa
@@ -41,9 +43,50 @@ namespace Heiwa
             this.Hide(); // Ocultar el formulario de inicio de sesión
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private async void btnIngresar_Click(object sender, EventArgs e)
         {
-            AbrirAdminWindow();
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            var loginData = new
+            {
+                email = username,
+                password = password
+            };
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(loginData);
+            StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            string relativeUrl = "Auth";
+
+            try
+            {
+                string response = await ClienteHttp.PostAsync(relativeUrl, content);
+
+                if (!string.IsNullOrEmpty(response))
+                {
+                    var token = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(response).token;
+
+                    MessageBox.Show("Login exitoso, token recibido.");
+
+                    if (token != null)
+                    {
+                        AbrirAdminWindow();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Autenticación fallida, por favor intente nuevamente.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Autenticación fallida, por favor intente nuevamente.");
+                }
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Autenticación fallida, por favor intente nuevamente.");
+            }
+            
         }
     }
 }

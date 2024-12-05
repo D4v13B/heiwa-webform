@@ -32,8 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,11 +54,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("AirbnbCereal_W_Blk Black", 26F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.label1.Location = new System.Drawing.Point(588, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(628, 68);
+            this.label1.Size = new System.Drawing.Size(595, 59);
             this.label1.TabIndex = 2;
             this.label1.Text = "¡Bienvenido de regreso!";
             // 
@@ -66,39 +66,39 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.label2.Location = new System.Drawing.Point(594, 352);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 36);
+            this.label2.Size = new System.Drawing.Size(137, 48);
             this.label2.TabIndex = 3;
-            this.label2.Text = "ID:";
+            this.label2.Text = "Email";
             // 
-            // txtID
+            // txtUsername
             // 
-            this.txtID.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtID.Location = new System.Drawing.Point(600, 408);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(437, 44);
-            this.txtID.TabIndex = 4;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtUsername.Location = new System.Drawing.Point(600, 408);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(437, 39);
+            this.txtUsername.TabIndex = 4;
             // 
-            // txtContrasena
+            // txtPassword
             // 
-            this.txtContrasena.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtContrasena.Location = new System.Drawing.Point(600, 554);
-            this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(437, 44);
-            this.txtContrasena.TabIndex = 6;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtPassword.Location = new System.Drawing.Point(600, 554);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(437, 39);
+            this.txtPassword.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.label3.Location = new System.Drawing.Point(594, 499);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 36);
+            this.label3.Size = new System.Drawing.Size(180, 32);
             this.label3.TabIndex = 5;
             this.label3.Text = "Contraseña:";
             // 
@@ -106,7 +106,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(20)))), ((int)(((byte)(35)))));
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnIngresar.Location = new System.Drawing.Point(611, 649);
             this.btnIngresar.Name = "btnIngresar";
@@ -123,9 +123,9 @@
             this.BackgroundImage = global::Heiwa.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(1266, 904);
             this.Controls.Add(this.btnIngresar);
-            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -144,8 +144,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnIngresar;
     }
