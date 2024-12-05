@@ -33,20 +33,18 @@
             this.dGViewTabla = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.gBoxRegistrar = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbNewTipo = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.lBoxEstado = new System.Windows.Forms.ListBox();
-            this.txtBoxTelefono = new System.Windows.Forms.TextBox();
+            this.lbxNewEstado = new System.Windows.Forms.ListBox();
+            this.txtNewTelefono = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtBoxCorreo = new System.Windows.Forms.TextBox();
+            this.txtNewCorreo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtBoxContraseña = new System.Windows.Forms.TextBox();
+            this.txtNewPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBoxNombre = new System.Windows.Forms.TextBox();
+            this.txtNewNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOrdenes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
@@ -103,33 +101,31 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("AirbnbCereal_W_Blk Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
             this.label1.Location = new System.Drawing.Point(357, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 52);
+            this.label1.Size = new System.Drawing.Size(401, 46);
             this.label1.TabIndex = 2;
             this.label1.Text = "Gestión de Usuarios";
             // 
             // gBoxRegistrar
             // 
             this.gBoxRegistrar.BackColor = System.Drawing.Color.Transparent;
-            this.gBoxRegistrar.Controls.Add(this.comboBox1);
+            this.gBoxRegistrar.Controls.Add(this.cmbNewTipo);
             this.gBoxRegistrar.Controls.Add(this.label14);
-            this.gBoxRegistrar.Controls.Add(this.textBox5);
-            this.gBoxRegistrar.Controls.Add(this.label12);
             this.gBoxRegistrar.Controls.Add(this.btnAceptar);
             this.gBoxRegistrar.Controls.Add(this.label6);
-            this.gBoxRegistrar.Controls.Add(this.lBoxEstado);
-            this.gBoxRegistrar.Controls.Add(this.txtBoxTelefono);
+            this.gBoxRegistrar.Controls.Add(this.lbxNewEstado);
+            this.gBoxRegistrar.Controls.Add(this.txtNewTelefono);
             this.gBoxRegistrar.Controls.Add(this.label5);
-            this.gBoxRegistrar.Controls.Add(this.txtBoxCorreo);
+            this.gBoxRegistrar.Controls.Add(this.txtNewCorreo);
             this.gBoxRegistrar.Controls.Add(this.label4);
-            this.gBoxRegistrar.Controls.Add(this.txtBoxContraseña);
+            this.gBoxRegistrar.Controls.Add(this.txtNewPassword);
             this.gBoxRegistrar.Controls.Add(this.label3);
-            this.gBoxRegistrar.Controls.Add(this.txtBoxNombre);
+            this.gBoxRegistrar.Controls.Add(this.txtNewNombre);
             this.gBoxRegistrar.Controls.Add(this.label2);
-            this.gBoxRegistrar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gBoxRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gBoxRegistrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.gBoxRegistrar.Location = new System.Drawing.Point(354, 108);
             this.gBoxRegistrar.Name = "gBoxRegistrar";
@@ -138,50 +134,32 @@
             this.gBoxRegistrar.TabStop = false;
             this.gBoxRegistrar.Text = "Registrar";
             // 
-            // comboBox1
+            // cmbNewTipo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 10F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbNewTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.cmbNewTipo.FormattingEnabled = true;
+            this.cmbNewTipo.Items.AddRange(new object[] {
             "Cliente",
             "Admin"});
-            this.comboBox1.Location = new System.Drawing.Point(340, 134);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(104, 34);
-            this.comboBox1.TabIndex = 15;
+            this.cmbNewTipo.Location = new System.Drawing.Point(340, 134);
+            this.cmbNewTipo.Name = "cmbNewTipo";
+            this.cmbNewTipo.Size = new System.Drawing.Size(104, 33);
+            this.cmbNewTipo.TabIndex = 15;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label14.Location = new System.Drawing.Point(334, 106);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 26);
+            this.label14.Size = new System.Drawing.Size(62, 25);
             this.label14.TabIndex = 14;
             this.label14.Text = "Tipo:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(340, 65);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(104, 34);
-            this.textBox5.TabIndex = 12;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(334, 35);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(38, 26);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "ID:";
             // 
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
-            this.btnAceptar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnAceptar.Location = new System.Drawing.Point(32, 315);
             this.btnAceptar.Name = "btnAceptar";
@@ -189,106 +167,107 @@
             this.btnAceptar.TabIndex = 10;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(264, 242);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 26);
+            this.label6.Size = new System.Drawing.Size(86, 25);
             this.label6.TabIndex = 9;
             this.label6.Text = "Estado:";
             // 
-            // lBoxEstado
+            // lbxNewEstado
             // 
-            this.lBoxEstado.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lBoxEstado.FormattingEnabled = true;
-            this.lBoxEstado.ItemHeight = 26;
-            this.lBoxEstado.Items.AddRange(new object[] {
+            this.lbxNewEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbxNewEstado.FormattingEnabled = true;
+            this.lbxNewEstado.ItemHeight = 25;
+            this.lbxNewEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.lBoxEstado.Location = new System.Drawing.Point(268, 272);
-            this.lBoxEstado.Name = "lBoxEstado";
-            this.lBoxEstado.Size = new System.Drawing.Size(175, 30);
-            this.lBoxEstado.TabIndex = 8;
+            this.lbxNewEstado.Location = new System.Drawing.Point(268, 272);
+            this.lbxNewEstado.Name = "lbxNewEstado";
+            this.lbxNewEstado.Size = new System.Drawing.Size(175, 29);
+            this.lbxNewEstado.TabIndex = 8;
             // 
-            // txtBoxTelefono
+            // txtNewTelefono
             // 
-            this.txtBoxTelefono.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxTelefono.Location = new System.Drawing.Point(32, 271);
-            this.txtBoxTelefono.Name = "txtBoxTelefono";
-            this.txtBoxTelefono.Size = new System.Drawing.Size(202, 34);
-            this.txtBoxTelefono.TabIndex = 7;
+            this.txtNewTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtNewTelefono.Location = new System.Drawing.Point(32, 271);
+            this.txtNewTelefono.Name = "txtNewTelefono";
+            this.txtNewTelefono.Size = new System.Drawing.Size(202, 30);
+            this.txtNewTelefono.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(27, 242);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 26);
+            this.label5.Size = new System.Drawing.Size(104, 25);
             this.label5.TabIndex = 6;
             this.label5.Text = "Telefono:";
             // 
-            // txtBoxCorreo
+            // txtNewCorreo
             // 
-            this.txtBoxCorreo.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxCorreo.Location = new System.Drawing.Point(32, 203);
-            this.txtBoxCorreo.Name = "txtBoxCorreo";
-            this.txtBoxCorreo.Size = new System.Drawing.Size(412, 34);
-            this.txtBoxCorreo.TabIndex = 5;
+            this.txtNewCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtNewCorreo.Location = new System.Drawing.Point(32, 203);
+            this.txtNewCorreo.Name = "txtNewCorreo";
+            this.txtNewCorreo.Size = new System.Drawing.Size(412, 30);
+            this.txtNewCorreo.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(27, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 26);
+            this.label4.Size = new System.Drawing.Size(85, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Correo:";
             // 
-            // txtBoxContraseña
+            // txtNewPassword
             // 
-            this.txtBoxContraseña.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxContraseña.Location = new System.Drawing.Point(32, 135);
-            this.txtBoxContraseña.Name = "txtBoxContraseña";
-            this.txtBoxContraseña.Size = new System.Drawing.Size(283, 34);
-            this.txtBoxContraseña.TabIndex = 3;
+            this.txtNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtNewPassword.Location = new System.Drawing.Point(32, 135);
+            this.txtNewPassword.Name = "txtNewPassword";
+            this.txtNewPassword.Size = new System.Drawing.Size(283, 30);
+            this.txtNewPassword.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(27, 106);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 26);
+            this.label3.Size = new System.Drawing.Size(131, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Contraseña:";
             // 
-            // txtBoxNombre
+            // txtNewNombre
             // 
-            this.txtBoxNombre.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBoxNombre.Location = new System.Drawing.Point(32, 68);
-            this.txtBoxNombre.Name = "txtBoxNombre";
-            this.txtBoxNombre.Size = new System.Drawing.Size(283, 34);
-            this.txtBoxNombre.TabIndex = 1;
+            this.txtNewNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtNewNombre.Location = new System.Drawing.Point(32, 68);
+            this.txtNewNombre.Name = "txtNewNombre";
+            this.txtNewNombre.Size = new System.Drawing.Size(283, 30);
+            this.txtNewNombre.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(27, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 26);
+            this.label2.Size = new System.Drawing.Size(94, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre:";
             // 
             // btnOrdenes
             // 
             this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.btnOrdenes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOrdenes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnOrdenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnOrdenes.Location = new System.Drawing.Point(30, 320);
             this.btnOrdenes.Name = "btnOrdenes";
@@ -301,7 +280,7 @@
             // btnProductos
             // 
             this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.btnProductos.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnProductos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnProductos.Location = new System.Drawing.Point(30, 411);
             this.btnProductos.Name = "btnProductos";
@@ -314,7 +293,7 @@
             // btnIngredientes
             // 
             this.btnIngredientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.btnIngredientes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnIngredientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnIngredientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnIngredientes.Location = new System.Drawing.Point(30, 502);
             this.btnIngredientes.Name = "btnIngredientes";
@@ -327,7 +306,7 @@
             // btnCerrarSesion
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.btnCerrarSesion.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnCerrarSesion.Location = new System.Drawing.Point(30, 827);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
@@ -356,7 +335,7 @@
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
             this.groupBox1.Location = new System.Drawing.Point(354, 502);
             this.groupBox1.Name = "groupBox1";
@@ -368,7 +347,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(100)))), ((int)(((byte)(157)))));
-            this.btnEliminar.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnEliminar.Location = new System.Drawing.Point(195, 315);
             this.btnEliminar.Name = "btnEliminar";
@@ -379,48 +358,48 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 10F, System.Drawing.FontStyle.Bold);
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Cliente",
             "Admin"});
             this.comboBox2.Location = new System.Drawing.Point(339, 135);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(104, 34);
+            this.comboBox2.Size = new System.Drawing.Size(104, 33);
             this.comboBox2.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(334, 106);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 26);
+            this.label7.Size = new System.Drawing.Size(62, 25);
             this.label7.TabIndex = 14;
             this.label7.Text = "Tipo:";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox1.Location = new System.Drawing.Point(340, 65);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 34);
+            this.textBox1.Size = new System.Drawing.Size(104, 30);
             this.textBox1.TabIndex = 12;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(334, 35);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 26);
+            this.label8.Size = new System.Drawing.Size(40, 25);
             this.label8.TabIndex = 11;
             this.label8.Text = "ID:";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(0)))), ((int)(((byte)(45)))));
-            this.button1.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 11F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.button1.Location = new System.Drawing.Point(32, 315);
             this.button1.Name = "button1";
@@ -432,102 +411,102 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.Location = new System.Drawing.Point(264, 242);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 26);
+            this.label9.Size = new System.Drawing.Size(86, 25);
             this.label9.TabIndex = 9;
             this.label9.Text = "Estado:";
             // 
             // listBox3
             // 
-            this.listBox3.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 26;
+            this.listBox3.ItemHeight = 25;
             this.listBox3.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
             this.listBox3.Location = new System.Drawing.Point(268, 272);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(175, 30);
+            this.listBox3.Size = new System.Drawing.Size(175, 29);
             this.listBox3.TabIndex = 8;
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox2.Location = new System.Drawing.Point(32, 271);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 34);
+            this.textBox2.Size = new System.Drawing.Size(202, 30);
             this.textBox2.TabIndex = 7;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(27, 242);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 26);
+            this.label10.Size = new System.Drawing.Size(104, 25);
             this.label10.TabIndex = 6;
             this.label10.Text = "Telefono:";
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox3.Location = new System.Drawing.Point(32, 203);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(412, 34);
+            this.textBox3.Size = new System.Drawing.Size(412, 30);
             this.textBox3.TabIndex = 5;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label11.Location = new System.Drawing.Point(27, 171);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 26);
+            this.label11.Size = new System.Drawing.Size(85, 25);
             this.label11.TabIndex = 4;
             this.label11.Text = "Correo:";
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox4.Location = new System.Drawing.Point(32, 135);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(283, 34);
+            this.textBox4.Size = new System.Drawing.Size(283, 30);
             this.textBox4.TabIndex = 3;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label13.Location = new System.Drawing.Point(27, 106);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(129, 26);
+            this.label13.Size = new System.Drawing.Size(131, 25);
             this.label13.TabIndex = 2;
             this.label13.Text = "Contraseña:";
             // 
             // textBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("AirbnbCereal_W_Md Med", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox6.Location = new System.Drawing.Point(32, 68);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(283, 34);
+            this.textBox6.Size = new System.Drawing.Size(283, 30);
             this.textBox6.TabIndex = 1;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label15.Location = new System.Drawing.Point(27, 38);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(95, 26);
+            this.label15.Size = new System.Drawing.Size(94, 25);
             this.label15.TabIndex = 0;
             this.label15.Text = "Nombre:";
             // 
             // btnUsuario
             // 
             this.btnUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.btnUsuario.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnUsuario.Location = new System.Drawing.Point(30, 235);
             this.btnUsuario.Name = "btnUsuario";
@@ -539,7 +518,7 @@
             // btnPromociones
             // 
             this.btnPromociones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.btnPromociones.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPromociones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnPromociones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnPromociones.Location = new System.Drawing.Point(30, 592);
             this.btnPromociones.Name = "btnPromociones";
@@ -552,7 +531,7 @@
             // btnReportes
             // 
             this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(53)))));
-            this.btnReportes.Font = new System.Drawing.Font("AirbnbCereal_W_Bd", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.btnReportes.Location = new System.Drawing.Point(30, 676);
             this.btnReportes.Name = "btnReportes";
@@ -605,19 +584,17 @@
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnIngredientes;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.TextBox txtBoxContraseña;
+        private System.Windows.Forms.TextBox txtNewPassword;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBoxNombre;
+        private System.Windows.Forms.TextBox txtNewNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBoxCorreo;
+        private System.Windows.Forms.TextBox txtNewCorreo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox lBoxEstado;
-        private System.Windows.Forms.TextBox txtBoxTelefono;
+        private System.Windows.Forms.ListBox lbxNewEstado;
+        private System.Windows.Forms.TextBox txtNewTelefono;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
@@ -634,7 +611,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbNewTipo;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnUsuario;
