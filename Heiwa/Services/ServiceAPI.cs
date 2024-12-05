@@ -12,8 +12,14 @@
     {
 
         private static readonly HttpClient httpClient = new HttpClient();
+        private static readonly string BaseUrl = "http://localhost:5027/api/";
+        static ServiceAPI()
+        {
+            httpClient.BaseAddress = new Uri(BaseUrl);
+            httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+        }
 
-        //Usuarios 
+        //Usuarios
 
         //Agregar usuario
         public static async Task SaveUsuarioAsync(UsuarioRequest usuarioRequest)
