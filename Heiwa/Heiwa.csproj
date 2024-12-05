@@ -55,6 +55,7 @@
     <Compile Include="Ingredientes.Designer.cs">
       <DependentUpon>Ingredientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\DetalleOrdenRequest.cs" />
     <Compile Include="Models\Ingrediente.cs" />
     <Compile Include="Models\IngredienteRequest.cs" />
     <Compile Include="Models\MetodoPago.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Models\ProductoRequest.cs" />
     <Compile Include="Models\ProductoTipoRequest.cs" />
     <Compile Include="Models\ProductoTipos.cs" />
+    <Compile Include="Models\ProductPromocion.cs" />
     <Compile Include="Models\Promocion.cs" />
     <Compile Include="Models\PromocionDetalle.cs" />
     <Compile Include="Models\PromocionDetalleRequest.cs" />

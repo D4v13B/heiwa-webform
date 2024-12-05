@@ -10,8 +10,8 @@ namespace Heiwa.Models
         public  string Email { get; set; }
         public string Telefono { get; set; }
         public bool Estado { get; set; }
-        public DateTime LastLogin { get; set; }
-        public DateTime DateJoined { get; set; }
+        public string LastLogin { get; set; }
+        public string DateJoined { get; set; }
         public int UsuarioTipoId { get; set; }
 
         // Relación con UsuarioTipo

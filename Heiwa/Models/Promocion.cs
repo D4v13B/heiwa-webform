@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Heiwa.Models
 {
@@ -10,6 +11,8 @@ namespace Heiwa.Models
         public DateTime FechaValidezFinal { get; set; }
         public decimal Precio { get; set; }
         public string Foto { get; set; }
+
+        public List<PromocionDetalle> Detalles { get; set; }
     }
 
 }

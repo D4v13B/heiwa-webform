@@ -7,7 +7,7 @@ namespace Heiwa
     public class ClienteHttp
     {
         private static HttpClient _client;
-        private static readonly string BaseUrl = "http://localhost:5027/api/";
+        private static readonly string BaseUrl = "https://localhost:7009/api/";
 
         public static HttpClient CreateHttpClient()
         {

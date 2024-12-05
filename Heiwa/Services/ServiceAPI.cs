@@ -23,7 +23,46 @@
 
             HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
+        }
 
+        public static async Task UpdateUsuarioAsync(UsuarioRequest usuarioRequest, int id)
+        {
+            var url = $"Usuario/{id}";
+
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(usuarioRequest);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await ClienteHttp.PutAsync(url, content);
+            response.EnsureSuccessStatusCode();
+        }
+
+        public static async Task DeleteUsuarioAsync(int id)
+        {
+            var url = $"Usuario/{id}";
+
+            HttpResponseMessage response = await ClienteHttp.DeleteAsync(url);
+            response.EnsureSuccessStatusCode();
+        }
+
+        public static async Task<List<Usuario>> GetUsuarios()
+        {
+            var url = "Usuario";
+
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+
+            string responseBody = await response.Content.ReadAsStringAsync();
+
+            // Deserializar el JSON
+            var usuarios = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Usuario>>(responseBody);
+
+            // Asignar el nombre de UsuarioTipo a una propiedad adicional si es necesario
+            foreach (var usuario in usuarios)
+            {
+                string tipoNombre = usuario.UsuarioTipo.Tipo ?? "Sin Tipo"; // Manejar valores 
+            }
+
+            return usuarios;
         }
 
 
@@ -114,7 +153,6 @@
 
             string responseBody = await response.Content.ReadAsStringAsync();
 
-
             return Newtonsoft.Json.JsonConvert.DeserializeObject<Producto>(responseBody);
         }
 
@@ -161,7 +199,7 @@
 
         //Metodo de pago
         // Obtener todos los métodos de pago
-        public async Task<List<MetodoPago>> GetMetodosPagoAsync()
+        public static async Task<List<MetodoPago>> GetMetodosPagoAsync()
         {
 
             var url = "MetodoPago"; 
