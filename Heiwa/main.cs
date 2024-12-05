@@ -48,11 +48,14 @@ namespace Heiwa
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
+            // Crear el objeto de datos para el login
             var loginData = new
             {
                 email = username,
                 password = password
             };
+
+            // Serializar el objeto a JSON
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(loginData);
             StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -60,33 +63,43 @@ namespace Heiwa
 
             try
             {
-                string response = await ClienteHttp.PostAsync(relativeUrl, content);
+                // Enviar la solicitud POST al endpoint de autenticación
+                HttpResponseMessage response = await ClienteHttp.PostAsync(relativeUrl, content);
 
-                if (!string.IsNullOrEmpty(response))
+                // Verificar si la respuesta es exitosa
+                if (response.IsSuccessStatusCode)
                 {
-                    var token = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(response).token;
+                    // Leer el contenido de la respuesta como string
+                    string responseContent = await response.Content.ReadAsStringAsync();
 
-                    MessageBox.Show("Login exitoso, token recibido.");
+                    // Deserializar el token del JSON
+                    var tokenData = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(responseContent);
+                    string token = tokenData?.token;
 
-                    if (token != null)
+                    if (!string.IsNullOrEmpty(token))
                     {
-                        AbrirAdminWindow();
+                        MessageBox.Show("Login exitoso, token recibido.");
+                        AbrirAdminWindow(); // Llamar a la ventana de administración
                     }
                     else
                     {
-                        MessageBox.Show("Autenticación fallida, por favor intente nuevamente.");
+                        MessageBox.Show("Autenticación fallida, no se recibió un token válido.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Autenticación fallida, por favor intente nuevamente.");
+                    // Manejo de errores en caso de respuesta no exitosa
+                    string errorContent = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Autenticación fallida. Error: {response.ReasonPhrase}. Detalles: {errorContent}");
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                MessageBox.Show("Autenticación fallida, por favor intente nuevamente.");
+                // Manejo de excepciones generales
+                MessageBox.Show($"Ocurrió un error: {ex.Message}");
             }
-            
+
+
         }
     }
 }

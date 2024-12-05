@@ -28,40 +28,32 @@ namespace Heiwa
         }
 
         // Método para hacer una solicitud GET con baseUrl
-        public static async Task<string> GetAsync(string relativeUrl)
+        public static async Task<HttpResponseMessage> GetAsync(string relativeUrl)
         {
             HttpClient client = CreateHttpClient();
             // Puedes pasar directamente la ruta relativa, no es necesario concatenar con BaseUrl
-            HttpResponseMessage response = await client.GetAsync(relativeUrl);
-            response.EnsureSuccessStatusCode(); // Lanza una excepción si la respuesta no es exitosa
-            return await response.Content.ReadAsStringAsync();
+            return await client.GetAsync(relativeUrl);
         }
 
         // Método para hacer una solicitud POST con baseUrl
-        public static async Task<string> PostAsync(string relativeUrl, HttpContent content)
+        public static async Task<HttpResponseMessage> PostAsync(string relativeUrl, HttpContent content)
         {
             HttpClient client = CreateHttpClient();
             // Puedes pasar directamente la ruta relativa, no es necesario concatenar con BaseUrl
-            HttpResponseMessage response = await client.PostAsync(relativeUrl, content);
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadAsStringAsync();
+            return await client.PostAsync(relativeUrl, content);
         }
 
-        public static async Task<string> PutAsync(string relativeUrl, HttpContent content)
+        public static async Task<HttpResponseMessage> PutAsync(string relativeUrl, HttpContent content)
         {
             HttpClient client = CreateHttpClient();
             // Puedes pasar directamente la ruta relativa, no es necesario concatenar con BaseUrl
-            HttpResponseMessage response = await client.PutAsync(relativeUrl, content);
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadAsStringAsync();
+            return await client.PutAsync(relativeUrl, content);
         }
 
-        public static async Task<string> DeleteAsync(string relativeUrl)
+        public static async Task<HttpResponseMessage> DeleteAsync(string relativeUrl)
         {
             HttpClient client = CreateHttpClient();
-            HttpResponseMessage response = await client.DeleteAsync(relativeUrl);
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadAsStringAsync();
+            return await client.DeleteAsync(relativeUrl);
         }
     }
 }

@@ -11,14 +11,6 @@
     public class ServiceAPI
     {
 
-        private static readonly HttpClient httpClient = new HttpClient();
-        private static readonly string BaseUrl = "http://localhost:5027/api/";
-        static ServiceAPI()
-        {
-            httpClient.BaseAddress = new Uri(BaseUrl);
-            httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-        }
-
         //Usuarios
 
         //Agregar usuario
@@ -29,7 +21,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(usuarioRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }
@@ -40,7 +32,7 @@
         {
             var url = "Ingrediente"; 
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -53,7 +45,7 @@
         {
             var url = $"Ingrediente/{id}"; 
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -69,7 +61,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(ingredienteRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }
@@ -82,7 +74,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(ingredienteRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PutAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PutAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }
@@ -92,7 +84,7 @@
         {
             var url = $"Ingrediente/{id}"; 
 
-            HttpResponseMessage response = await httpClient.DeleteAsync(url);
+            HttpResponseMessage response = await ClienteHttp.DeleteAsync(url);
             response.EnsureSuccessStatusCode();
 
         }
@@ -103,7 +95,7 @@
 
             var url = "Producto"; 
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -117,7 +109,7 @@
 
             var url = $"Producto/{id}"; 
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -135,7 +127,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(productoRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }
@@ -149,7 +141,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(productoRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PutAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PutAsync(url, content);
             response.EnsureSuccessStatusCode();
 
             Console.WriteLine("Producto actualizado exitosamente.");
@@ -161,7 +153,7 @@
 
             var url = $"Producto/{id}"; 
 
-            HttpResponseMessage response = await httpClient.DeleteAsync(url);
+            HttpResponseMessage response = await ClienteHttp.DeleteAsync(url);
             response.EnsureSuccessStatusCode();
 
             Console.WriteLine("Producto eliminado exitosamente.");
@@ -174,7 +166,7 @@
 
             var url = "MetodoPago"; 
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -189,7 +181,7 @@
 
             var url = $"MetodoPago/{id}"; 
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -206,7 +198,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(metodoPagoRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
             Console.WriteLine("Método de pago guardado exitosamente.");
@@ -221,7 +213,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(metodoPagoRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PutAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PutAsync(url, content);
             response.EnsureSuccessStatusCode();
 
             Console.WriteLine("Método de pago actualizado exitosamente.");
@@ -233,7 +225,7 @@
 
             var url = $"MetodoPago/{id}"; 
 
-            HttpResponseMessage response = await httpClient.DeleteAsync(url);
+            HttpResponseMessage response = await ClienteHttp.DeleteAsync(url);
             response.EnsureSuccessStatusCode();
 
             Console.WriteLine("Método de pago eliminado exitosamente.");
@@ -247,7 +239,7 @@
 
             try
             {
-                HttpResponseMessage response = await httpClient.GetAsync(url);
+                HttpResponseMessage response = await ClienteHttp.GetAsync(url);
                 response.EnsureSuccessStatusCode();
 
                 string responseBody = await response.Content.ReadAsStringAsync();
@@ -270,7 +262,7 @@
 
             try
             {
-                HttpResponseMessage response = await httpClient.GetAsync(url);
+                HttpResponseMessage response = await ClienteHttp.GetAsync(url);
                 response.EnsureSuccessStatusCode();
 
                 string responseBody = await response.Content.ReadAsStringAsync();
@@ -296,7 +288,7 @@
                 string json = Newtonsoft.Json.JsonConvert.SerializeObject(ordenRequest);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await httpClient.PostAsync(url, content);
+                HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
                 response.EnsureSuccessStatusCode();
 
                 Console.WriteLine("Orden guardada exitosamente.");
@@ -318,7 +310,7 @@
                 string json = Newtonsoft.Json.JsonConvert.SerializeObject(ordenRequest);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await httpClient.PutAsync(url, content);
+                HttpResponseMessage response = await ClienteHttp.PutAsync(url, content);
                 response.EnsureSuccessStatusCode();
 
             }
@@ -336,7 +328,7 @@
 
             try
             {
-                HttpResponseMessage response = await httpClient.DeleteAsync(url);
+                HttpResponseMessage response = await ClienteHttp.DeleteAsync(url);
                 response.EnsureSuccessStatusCode();
             }
             catch (Exception ex)
@@ -351,7 +343,7 @@
         {
             var url = "Promocion";
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -363,7 +355,7 @@
         {
             var url = $"Promocion/{id}";
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -378,7 +370,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(promocionRequest);
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }
@@ -390,7 +382,7 @@
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(promocionRequest);
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PutAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PutAsync(url, content);
             response.EnsureSuccessStatusCode();
 
             
@@ -400,7 +392,7 @@
         {
             var url = $"Promocion/{id}";
 
-            HttpResponseMessage response = await httpClient.DeleteAsync(url);
+            HttpResponseMessage response = await ClienteHttp.DeleteAsync(url);
             response.EnsureSuccessStatusCode();
 
         }
@@ -413,7 +405,7 @@
             string json = JsonConvert.SerializeObject(ordenDetalleRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }
@@ -423,7 +415,7 @@
         {
             var url = "OrdenEstado";
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -436,7 +428,7 @@
         {
             var url = "ProductoTipo";
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            HttpResponseMessage response = await ClienteHttp.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -452,7 +444,7 @@
             string json = JsonConvert.SerializeObject(promocionDetalleRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }
@@ -465,7 +457,7 @@
             string json = JsonConvert.SerializeObject(platilloIngredienteRequest);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await httpClient.PostAsync(url, content);
+            HttpResponseMessage response = await ClienteHttp.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
         }

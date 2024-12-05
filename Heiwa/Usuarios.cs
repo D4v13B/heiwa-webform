@@ -96,10 +96,15 @@ namespace Heiwa
             try
             {
                 await ServiceAPI.SaveUsuarioAsync(usuarioRequest);
+                txtNewNombre.Text = "";
+                txtNewCorreo.Text = "";
+                txtNewPassword.Text = "";
+                txtNewTelefono.Text = "";
+                MessageBox.Show("Usuario guardado en la base de Datos");
             }
             catch (Exception ex) 
             {
-                MessageBox.Show("Error al momento de guardar el usuario");
+                MessageBox.Show($"Error al momento de guardar el usuario {ex.Message}");
             }
         }
     }
