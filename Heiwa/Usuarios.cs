@@ -78,7 +78,7 @@ namespace Heiwa
             var correo = txtNewCorreo.Text;
             var password = txtNewPassword.Text;
             var telefono = txtNewTelefono.Text;
-            var tipo = lbxNewEstado.Text;
+            var tipo = lbxNewEstado.SelectedItems.ToString();
             int tipoId = 1;
 
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(correo) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(telefono) || string.IsNullOrEmpty(tipo)) {
@@ -108,6 +108,7 @@ namespace Heiwa
                 txtNewPassword.Text = "";
                 txtNewTelefono.Text = "";
                 MessageBox.Show("Usuario guardado en la base de Datos");
+                LoadDataGridView();
             }
             catch (Exception ex) 
             {
@@ -118,6 +119,7 @@ namespace Heiwa
         private async void LoadDataGridView()
         {
             List<Usuario> users = await ServiceAPI.GetUsuarios();
+            dgvtUsuarios.DataSource = null;
             if (users.Count > 0)
             {
                 dgvtUsuarios.DataSource = users; // Asigna la lista directamente como fuente de datos

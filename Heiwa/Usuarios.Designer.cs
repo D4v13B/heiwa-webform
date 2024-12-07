@@ -141,7 +141,9 @@
             this.cmbNewTipo.FormattingEnabled = true;
             this.cmbNewTipo.Items.AddRange(new object[] {
             "Cliente",
-            "Admin"});
+            "Admin",
+            "Chef",
+            "Ventas"});
             this.cmbNewTipo.Location = new System.Drawing.Point(340, 134);
             this.cmbNewTipo.Name = "cmbNewTipo";
             this.cmbNewTipo.Size = new System.Drawing.Size(104, 33);

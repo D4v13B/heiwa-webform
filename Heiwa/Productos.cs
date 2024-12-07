@@ -1,13 +1,16 @@
 ﻿using Heiwa.Models;
 using Heiwa.Services;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Heiwa
 {
     public partial class Productos : Form
     {
+        List<Producto> productos = new List<Producto>();
         // Referencias a los demás formularios
         private Main mainForm;
         private Form usuariosForm;
@@ -19,6 +22,7 @@ namespace Heiwa
         public Productos()
         {
             InitializeComponent();
+            LoadProducts();
         }
 
         // Método para configurar las referencias de los formularios
@@ -129,6 +133,7 @@ namespace Heiwa
                 try
                 {
                     await ServiceAPI.SaveProductAsync(productoRequest);
+                LoadProducts();
                     MessageBox.Show("Producto guardado exitosamente.");
                 }
                 catch (HttpRequestException ex)
@@ -198,6 +203,7 @@ namespace Heiwa
                 {
                     await ServiceAPI.UpdateProductAsync(productoId, productoRequest);
                     MessageBox.Show("Producto actualizado exitosamente.");
+                    LoadProducts();
                 }
                 catch (HttpRequestException ex)
                 {
@@ -232,6 +238,7 @@ namespace Heiwa
             {
                 await ServiceAPI.DeleteProductAsync(productoId);
                 MessageBox.Show("Producto eliminado exitosamente.");
+                LoadProducts();
             }
             catch (HttpRequestException ex)
             {
@@ -252,6 +259,52 @@ namespace Heiwa
             {
                 MessageBox.Show($"Error al eliminar el producto: {ex.Message}");
             }
+        }
+
+        private async void LoadProducts()
+        {
+            try
+            {
+                productos = await ServiceAPI.GetProductsAsync();
+                dgvProductos.DataSource = null;
+                if (productos.Count > 0)
+                {
+                    dgvProductos.DataSource = productos; // Asigna la lista directamente como fuente de datos
+                }
+                else
+                {
+                    MessageBox.Show("No se encontraron datos.");
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void dgvProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica que el clic no sea en el encabezado
+            if (e.RowIndex >= 0)
+            {
+                // Obtén el objeto de la fila seleccionada
+                var selectedRow = dgvProductos.Rows[e.RowIndex].DataBoundItem as Producto;
+
+                if (selectedRow != null)
+                {
+                    Mostrarinfo(selectedRow);
+                }
+            }
+        }
+
+        private void Mostrarinfo(Producto producto)
+        {
+            txtName.Text = producto.Nombre;
+            txtPrice.Text = producto.Precio.ToString();
+            txtDescription.Text = producto.Descripcion.ToString();
+            txtId.Text = producto.Id.ToString();
+            cbxMed.Text = producto.UnidadMedida.ToString();
+            cbxType.Text = producto.ProductoTipo.Tipo;
         }
     }
 }

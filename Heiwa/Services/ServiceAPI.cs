@@ -507,14 +507,114 @@
 
         }
 
-        public static async Task<DataTable> GetDataTableAsync()
+        public static async Task<DataTable> ReporteProducto()
         {
             var url = "Reportes/porProducto"; // Aquí colocas el endpoint adecuado
 
             try
             {
                 // Realizamos la solicitud HTTP de manera asíncrona
-                HttpResponseMessage response = await httpClient.GetAsync(url);
+                HttpResponseMessage response = await ClienteHttp.GetAsync(url);
+                response.EnsureSuccessStatusCode(); // Garantiza que la respuesta sea exitosa
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                // Convertimos la respuesta a DataTable
+                var dataTable = JsonConvert.DeserializeObject<DataTable>(responseBody);
+
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                // En caso de error, se captura y se imprime
+                Console.WriteLine($"Error al obtener el DataTable: {ex.Message}");
+                return null;
+            }
+        }
+
+        public static async Task<DataTable> Top10(string fechaInicio, string fechaFin)
+        {
+            var url = $"Reportes/Top10/{fechaInicio}/{fechaFin}"; // Aquí colocas el endpoint adecuado
+
+            try
+            {
+                // Realizamos la solicitud HTTP de manera asíncrona
+                HttpResponseMessage response = await ClienteHttp.GetAsync(url);
+                response.EnsureSuccessStatusCode(); // Garantiza que la respuesta sea exitosa
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                // Convertimos la respuesta a DataTable
+                var dataTable = JsonConvert.DeserializeObject<DataTable>(responseBody);
+
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                // En caso de error, se captura y se imprime
+                Console.WriteLine($"Error al obtener el DataTable: {ex.Message}");
+                return null;
+            }
+        }
+
+        public static async Task<DataTable> ReporteMetodoPago()
+        {
+            var url = "Reportes/PorMetodoPago"; // Aquí colocas el endpoint adecuado
+
+            try
+            {
+                // Realizamos la solicitud HTTP de manera asíncrona
+                HttpResponseMessage response = await ClienteHttp.GetAsync(url);
+                response.EnsureSuccessStatusCode(); // Garantiza que la respuesta sea exitosa
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                // Convertimos la respuesta a DataTable
+                var dataTable = JsonConvert.DeserializeObject<DataTable>(responseBody);
+
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                // En caso de error, se captura y se imprime
+                Console.WriteLine($"Error al obtener el DataTable: {ex.Message}");
+                return null;
+            }
+        }
+
+        public static async Task<DataTable> ReporteOrdenes()
+        {
+            var url = "Reportes/Ordenes"; // Aquí colocas el endpoint adecuado
+
+            try
+            {
+                // Realizamos la solicitud HTTP de manera asíncrona
+                HttpResponseMessage response = await ClienteHttp.GetAsync(url);
+                response.EnsureSuccessStatusCode(); // Garantiza que la respuesta sea exitosa
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                // Convertimos la respuesta a DataTable
+                var dataTable = JsonConvert.DeserializeObject<DataTable>(responseBody);
+
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                // En caso de error, se captura y se imprime
+                Console.WriteLine($"Error al obtener el DataTable: {ex.Message}");
+                return null;
+            }
+        }
+
+        public static async Task<DataTable> StockIngrediente()
+        {
+            var url = "Reportes/StockIngredientes"; // Aquí colocas el endpoint adecuado
+
+            try
+            {
+                // Realizamos la solicitud HTTP de manera asíncrona
+                HttpResponseMessage response = await ClienteHttp.GetAsync(url);
                 response.EnsureSuccessStatusCode(); // Garantiza que la respuesta sea exitosa
 
                 string responseBody = await response.Content.ReadAsStringAsync();
